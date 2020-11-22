@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 2 </title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /*espacio entre el elemento y su contenido */
+            overflow: hidden;
+            background-color: rgb(7, 17, 14);
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        
+        li a:hover:not(#inicial) {
+            background-color: rgb(54, 37, 95);
+        }
+        
+        #logo {
+            float: right;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+        
+        #contenedor-imagen {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+        }
+        
+        #baner {
+            width: 100%;
+        }
+        
+        #centrado {
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            font-size: 2.5em;
+            font-family: sans-serif;
+            color: wheat;
+            font-weight: bold;
+        }
+        
+        #titulo {
+            background-color: black;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 0;
+            color: wheat;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .contenido {
+            width: 100%;
+        }
+        
+        .parcial {
+            width: 45%;
+            text-align: justify;
+            float: left;
+            margin-right: 5px;
+        }
+        
+        .arreglado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="conteiner">
+
+        <div>
+
+            <ul>
+
+                <li><a id="inicial" href="">Inicio</a></li>
+                <li><a href="">Intereses</a></li>
+                <li><a href="">Metas</a></li>
+                <li><a href="">Canciones</a></li>
+                <li><a href="">Aviso de privacidad</a></li>
+                <li id="logo"> <img src="/Img/logo.png" alt=""></li>
+            </ul>
+
+        </div>
+
+        <div id="contenedor-imagen">
+            <img id="baner" src="/Img/Programer.jpg" alt="">
+            <div id="centrado">
+                Diplomado full stack
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="titulo">
+        <h1>Modulo html-Css</h1>
+
+    </div>
+
+    <div class="contenido">
+        <div class="parcial">
+            <h2>¿Que es HTML?</h2>
+            <p>“HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto”</p>
+        </div>
+        <div class="parcial"><img src="/Img/html.png" alt=""></div>
+
+
+
+    </div>
+
+    <div class="contenido">
+
+        <div class="parcial">
+            <img src="/Img/css.png" alt="">
+        </div>
+
+        <div class="parcial">
+            <h2>¿Que es Css?</h2>
+            <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (incluyendo varios languages basados en XML como SVG, MathML o XHTML).</p>
+
+
+        </div>
+
+        <!-- <div class="contenido">
+            <h1 style="text-align:center;">¿Que es JS?</h1>
+        </div>  -->
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

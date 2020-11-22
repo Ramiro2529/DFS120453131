@@ -1,0 +1,22 @@
+h1 {
+    color: blueviolet;
+}
+
+table {
+    border: 1px solid rgb(2, 2, 2);
+    border-collapse: collapse;
+}
+
+thead,
+tr,
+td {
+    border: 1px solid black;
+}
+
+thead {
+    background-color: rgb(121, 42, 39);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align: center;
+}

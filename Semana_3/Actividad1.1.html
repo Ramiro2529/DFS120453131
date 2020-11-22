@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        .form {
+            width: 340px;
+            height: 440px;
+            background: rgb(88, 23, 23);
+            border-radius: 8px;
+            box-shadow: 0 0 40px -10px #000;
+            margin: calc(50vh - 220px) auto;
+            padding: 20px 30px;
+            max-width: calc(100vw - 40px);
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            text-align: center;
+            color: aliceblue;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .fondo {
+            background-color: rgb(245, 240, 240);
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(88, 23, 23);
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 14px 16px;
+            font-family: sans-serif;
+        }
+        
+        li a:hover:not(#inicial) {
+            background-color: rgb(173, 36, 32);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <ul>
+            <li><a id="inicial" href="">Inicio</a></li>
+            <li><a href="/metas.html">Metas</a></li>
+            <li><a href="/intereses.html">Intereses</a></li>
+            <li><a href="/canciones.html">Canciones</a></li>
+            <li><a href="/Actividad1.1.html">Animales</a></li>
+            <li>
+                <a href="/Actividad3.html">Registro</a>
+            </li>
+            <li id="logo"><img src="/Img/logo.png" alt=""></li>
+        </ul>
+    </div>
+
+    <h1>Registro</h1>
+
+    <div class="fondo">
+        <form class="form" action="/Respuesta.html" method="get">
+
+            <label for="">Nombre: </label> <input type="text" name="nombre" id=""><br><br>
+            <label class="dere" for="">Edad: </label><input type="number" name="edad"><br><br>
+            <label for="">Correo: </label><input type="email" name="correo" id="" value=""> <br><br>
+            <label for="">Telefono </label> <input type="number" name="" id=""><br><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+
+
+            <input type="submit" value="Enviar">
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
