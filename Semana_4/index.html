@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        console.log("Rebeca");
+
+        var fecha = new Date();
+        console.log(fecha);
+        //document.write(fecha);
+        console.log("/n");
+        var dia = fecha.getDay();
+        //document.write("El dia de la semana es: " + dia);
+        var horaDia = fecha.getHours();
+        console.log(horaDia);
+        //document.write("la hora es: " + horaDia);
+        var minutos = fecha.getMinutes();
+        // document.write("Los minutos son: " + minutos);
+
+
+        var nombre = "Rebeca";
+        if (dia == 0) {
+            dia = "Domingo";
+        }
+
+        if (minutos < 10) {
+            var min = "0" + minutos;
+        } else {
+            min = minutos;
+        }
+
+        var calificacion = Math.round(Math.random() * 10);
+        console.log(calificacion);
+
+
+
+        if (calificacion >= 6) {
+            console.log("Rebeca está aprobada");
+        } else {
+            console.log("Rebeca está reprobado");
+
+        }
+        console.log("El dia es: " + dia + " y la hora es: " + horaDia + ":" + min);
+
+        if (dia == 'Domingo') {
+
+
+            if (horaDia > 9 && horaDia < 14) {
+                console.log("Estamos en clase");
+
+                if (horaDia >= 11 && horaDia <= 12) {
+                    console.log("Estamos en descanso");
+                    console.log("son las: " + horaDia + ":" + min);
+
+                    var regreso = 60 - min;
+                    console.log("Faltan: " + regreso + " min para regresar del recreo");
+
+                }
+
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>
