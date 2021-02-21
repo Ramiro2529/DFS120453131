@@ -1,0 +1,19 @@
+	db.products.find({UnitPrice:{$gt:"12"}}).pretty()
+
+	db.products.find({UnitPrice:{$lt:"36"}}).pretty()
+
+	db.products.find({UnitPrice:{$gte:"20"}}).pretty()
+
+	db.products.find({UnitPrice:{$lte:"42"}}).pretty()
+
+	db.products.find({CategoryID:{$eq:"7"}}).pretty()
+
+db.products.find({UnitsInStock:{$gt:"13", $lt:"49"}}).pretty()
+
+
+
+db.orders.find({CustomerID:{$eq:"BLONP"}}).pretty()
+
+db.orders.find({ShipCity:{$eq:"Oulu"}}).pretty()
+
+db.orders.find({ShipCountry:{$eq:"USA"}}).pretty()
