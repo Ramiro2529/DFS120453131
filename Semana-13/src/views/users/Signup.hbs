@@ -1,15 +1,30 @@
 {{#if errorMessage}}
-<div class="alert alert-danger">{{errorMessage}}</div>
+    <div class="alert alert-danger">{{errorMessage}}</div>
 {{/if}}
 
 {{#if successMessage}}
-<div class="alert alert-success">{{successMessage}}</div>
+    <div class="alert alert-success">{{successMessage}}</div>
 {{/if}}
 
+
+<style>
+  .centrarLetras{
+  
+   text-align: center !important;
+  }
+
+  .centrarContenido{
+   margin-left: 300px;
+  }
+</style>
 <div class="container">
-    <h2>Registrate</h2>
-<form action="/users/nuevo" method="post">
- <div class="form-group">
+   
+<div class="centrarContenido">
+
+  <div class="card text-dark bg-light mb-3 centrarLetras" style="max-width: 50rem;"  >
+  <div class="card-header">Registrate</div>
+  <form action="/users/nuevo"  method="post">
+ <div class="form-group ">
     <label for="exampleInputEmail1">Nombre Usuario: </label>
     <input type="text" name='nombreUsuario' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
   </div>
@@ -22,6 +37,10 @@
     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
  
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-dark">Submit</button>
 </form>
+  
+  </div>
+</div>
+
 </div>

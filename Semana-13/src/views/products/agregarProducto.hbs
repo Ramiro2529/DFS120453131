@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar nuevo producto</h1>
+
+        <form action='/productos/agregarProducto' method='post'>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">ID</label>
+    <input type="text" name='_id'class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+ 
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Nombre</label>
+    <input type="text" name='nombreProducto'class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Descripcion</label>
+    <input type="text" name="descripcion" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Precio</label>
+    <input type="number" name='precio'class="form-control" id="exampleInputPassword1" min="0.0">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+    <input type="number" name="cantidad" class="form-control" id="exampleInputPassword1" min="0.0">
+  </div>
+  <button type="submit" class="btn btn-primary">Nuevo</button>
+</form>
+    </div>
+    
+</body>
+</html>

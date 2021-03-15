@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar servicio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card text-left">
+            <div class="card-header">
+                <h2>Editar servicio</h2>
+            </div>
+
+
+        <div class="card-body">
+            <form action="/servicios/editarServicio/{{updateService._id}}?_method=PUT" method="post">
+            <input type="hidden" name="_method" value="PUT"> 
+
+             <div class="row">
+                     <div class="col-lg-2">
+                         <label for="">id Servicio</label>
+                     </div>
+                     <div class="col-lg-2">
+                              <input type="text" name="_id" value="{{updateService._id}}" disabled='disabled'> 
+            
+                     </div>
+
+                 </div>
+           
+       
+
+            <div class="mb-3">
+
+
+                 <div class="row">
+                     <div class="col-lg-2">
+                         <label for="">Nombre del servicio</label>
+                     </div>
+                     <div class="col-lg-2">
+                         <input type="text" name="nombreServicio" value="{{updateService.nombreServicio}}" id="">
+            
+                     </div>
+
+                 </div>
+
+            </div>
+
+             <div class="mb-3">
+                 <div class="row">
+                     <div class="col-lg-2">
+                         <label for="">Persona encargada</label>
+                     </div>
+                     <div class="col-lg-2">
+                         <input type="text" name="personaEncargada" value="{{updateService.personaEncargada}}" id="">
+            
+                     </div>
+
+                 </div>
+                
+           
+            </div>
+             <div class="mb-3">
+                 
+           
+           
+
+            <div class="row">
+                     <div class="col-lg-2">
+                         <label for="precio">Descripcion</label>
+                     </div>
+                     <div class="col-lg-2">
+                        <input type="text" name="descripcion" value="{{updateService.descripcion}}">
+            
+                     </div>
+
+                 </div>
+            </div>
+
+             <div class="mb-3">
+              
+               
+
+
+                 <div class="row">
+                     <div class="col-lg-2">
+                            <label for="cantidad">Precio</label>
+                     </div>
+                     <div class="col-lg-2">
+                      <input type="text" name="precio" value="{{updateService.precio}}">
+            
+                     </div>
+
+                 </div>
+            </div>
+              <div class="mb-3">
+
+                     <div class="row">
+                     <div class="col-lg-2">
+                            <label for="cantidad">Duración</label>  
+                     </div>
+                     <div class="col-lg-2">
+                      <input type="text" name="duracion" value="{{updateService.duracion}}">
+            
+                     </div>
+
+                 </div>
+            
+               
+            </div>
+            <button type="submit" class="btn btn-dark">Actualizar</button>
+            </form>
+        </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

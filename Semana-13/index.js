@@ -54,9 +54,11 @@ app.use((req, res, next) => {
 
 
 // ROUTES 
-
+app.use(require('./src/routes/services'));
+app.use(require('./src/routes/products'));
 app.use(require('./src/routes/index'));
 app.use(require('./src/routes/users'));
+
 
 
 // Archivos estaticos

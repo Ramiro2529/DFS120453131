@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar nuevo servicio</h1>
+
+        <form action='/servicios/agregarServicio' method='post'>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">ID</label>
+    <input type="text" name='_id'class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+ 
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Nombre del servicio</label>
+    <input type="text" name='nombreServicio'class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Persona encargada</label>
+    <input type="text" name="personaEncargada" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Descripcion</label>
+    <input type="text" name='descripcion'class="form-control" id="exampleInputPassword1" min="0.0">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Precio</label>
+    <input type="number" name="precio" class="form-control" id="exampleInputPassword1" min="0.0">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Duración</label>
+    <input type="number" name="duracion" class="form-control" id="exampleInputPassword1" min="0.0">
+  </div>
+
+  <button type="submit" class="btn btn-dark">Nuevo</button>
+</form>
+    </div>
+    
+</body>
+</html>

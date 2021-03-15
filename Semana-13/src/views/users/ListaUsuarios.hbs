@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     <div class='container '>
+         <h1>Lista de Usuarios</h1> 
+       <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre Usuario</th>
+      <th scope="col">Correo</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each usuarios}}
+    <tr>
+      <th scope="row"></th>
+      <td>{{nombreUsuario}}</td>
+      <td>{{email}}</td>
+    </tr>
+      {{else}}
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">No se encontraron usuarios</h5>
+    
+    <p class="card-text">Verifique con su administrador de sistemas.</p>
+   
+  </div>
+</div>
+{{/each}}
+
+  </tbody>
+</table>
+
+
+    </div>
+    
+</body>
+</html>

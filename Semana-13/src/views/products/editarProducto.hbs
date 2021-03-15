@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Productos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card text-left">
+            <div class="card-header">
+                <h2>Editar Producto</h2>
+            </div>
+
+
+        <div class="card-body">
+            <form action="/productos/editarProducto/{{updateProduct._id}}?_method=PUT" method="post">
+            <input type="hidden" name="_method" value="PUT"> 
+            <label for="">id Producto</label>
+            <input type="text" name="_id" value="{{updateProduct._id}}" disabled='disabled'> 
+
+            <div class="mb-3">
+                 <label for="">Nombre del producto</label>
+            <input type="text" name="nombreProducto" value="{{updateProduct.nombreProducto}}" id="">
+           
+
+            </div>
+
+             <div class="mb-3">
+                 <label for="">Descripcion del producto</label>
+            <input type="text" name="descripcion" value="{{updateProduct.descripcion}}" id="">
+            
+            </div>
+             <div class="mb-3">
+                  <label for="precio">Precio del producto</label>
+            <input type="text" name="precio" value="{{updateProduct.precio}}">
+           
+            </div>
+
+             <div class="mb-3">
+                 <label for="cantidad">Cantidad</label>
+                <input type="text" name="cantidad" value="{{updateProduct.cantidad}}">
+            
+
+            </div>
+            <button type="submit" class="btn btn-dark">Actualizar</button>
+            </form>
+        </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
